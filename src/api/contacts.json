@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Viktor Riabokon",
+    "phone": "123-456-1111",
+    "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "group": "friends"
+  },
+  {
+    "id": 2,
+    "name": "Alan Turing",
+    "phone": "123-456-4444",
+    "info": "Nam, error.",
+    "group": "others"
+  },
+  {
+    "id": 3,
+    "name": "Samuel Jackson",
+    "phone": "123-456-2222",
+    "info": "asperiores nam similique quidem aspernatur cumque consectetur.",
+    "group": "work"
+  },
+  {
+    "id": 4,
+    "name": "Bruce Lee",
+    "phone": "123-456-3333",
+    "info": "Hic voluptatem aperiam perspiciatis deserunt doloribus nemo.",
+    "group": "others"
+  },
+  {
+    "id": 5,
+    "name": "Dua Lipa",
+    "phone": "123-456-5555",
+    "info": "Blanditiis, officia dolorem nam odit vero sit",
+    "group": "family"
+  }
+]
