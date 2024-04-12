@@ -1,17 +1,22 @@
-import React from 'react';
-import './App.scss';
-import contactsFromServer from './api/contacts.json';
-import { ContactsList } from './components/ContactsList/ContactsList';
+import React, { Suspense, useCallback, useMemo, useRef } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { AppInnerContainer, AppOuterContainer } from './styled';
+import { AppHeader } from './Components/Header';
+import { EntryScreen } from './Components/EntryScreen';
+import { MainScreenBottomBar } from './Components/MainScreenBottomBar';
+import { DesktopLayout } from './Components/Layouts/DesktopLayout';
 
-export const App: React.FC = () => {
+function App() {
   return (
-    <div className="body">
-      <div className="title">Contacts List</div>
-      <div className="page">
-        <div className="page-content">
-          <ContactsList contactsFromServer={[...contactsFromServer]} />
-        </div>
+    <AppOuterContainer className="app">
+      <div className='animation'>
+        <Suspense fallback={<div>Loading</div>}>
+          <DesktopLayout />
+        </Suspense>
       </div>
-    </div>
+    </AppOuterContainer>
   );
-};
+}
+
+export default App;

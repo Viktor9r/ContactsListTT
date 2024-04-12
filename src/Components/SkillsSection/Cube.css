@@ -1,0 +1,159 @@
+.box.show-front {
+  transform: translateZ(-50px) rotateY(0deg);
+}
+
+.box.show-back {
+  transform: translateZ(-50px) rotateY(-180deg);
+}
+
+.box.show-right {
+  transform: translateZ(-150px) rotateY(-90deg);
+}
+
+.box.show-left {
+  transform: translateZ(-150px) rotateY(90deg);
+}
+
+.box.show-top {
+  transform: translateZ(-100px) rotateX(-90deg);
+}
+
+.box.show-bottom {
+  transform: translateZ(-100px) rotateX(90deg);
+}
+
+
+.box__face {
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 30px 14px rgba(132, 136, 255, 1);
+  -moz-box-shadow: 0px 0px 30px 14px rgba(132, 136, 255, 1);
+  box-shadow: 0px 0px 30px 14px rgba(132, 136, 255, 1);
+}
+
+.box__face--front {
+  background: #000
+}
+
+.box__face--right {
+  background: #000
+}
+
+.box__face--back {
+  background: #000
+}
+
+.box__face--left {
+  background: #000
+}
+
+.box__face--front {
+  transform: rotateY(0deg) translateZ(300px);
+
+  @media screen and (max-width: 1200px) {
+    transform: rotateY(0deg) translateZ(250px);
+  }
+}
+
+.box__face--back {
+  transform: rotateY(180deg) translateZ(300px);
+
+  @media screen and (max-width: 1200px) {
+    transform: rotateY(180deg) translateZ(250px);
+  }
+}
+
+.box__face--right {
+  transform: rotateY(90deg) translateZ(300px);
+
+  @media screen and (max-width: 1200px) {
+    transform: rotateY(90deg) translateZ(250px);
+  }
+}
+
+.box__face--left {
+  transform: rotateY(-90deg) translateZ(300px);
+
+  @media screen and (max-width: 1200px) {
+    transform: rotateY(-90deg) translateZ(250px);
+  }
+}
+
+label {
+  margin-right: 10px;
+}
+
+.scene {
+  width: 600px;
+  transform: translateY(5%);
+  /* Adjusted width */
+  height: 45vh;
+  /* Adjusted height */
+  margin: 80px;
+  perspective: 1000px;
+
+  @media screen and (max-width: 1200px) {
+    width: 500px;
+  }
+}
+
+.box {
+  width: 600px;
+  /* Adjusted width */
+  height: 45vh;
+  /* Adjusted height */
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-50px);
+  transition: transform 1s;
+
+  @media screen and (max-width: 1200px) {
+    width: 500px;
+  }
+}
+
+.box__face {
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.box__face--front,
+.box__face--back,
+.box__face--right,
+.box__face--left {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  /* Adjusted width */
+  height: 45vh;
+  /* Adjusted height */
+  border-radius: 10px;
+  border: 1px solid black;
+  @media screen and (max-width: 1200px) {
+    width: 500px;
+  }
+
+  /* Adjusted line-height */
+}
+
+.box__face--top,
+.box__face--bottom {
+  width: 600px;
+  /* Adjusted width */
+  height: 600px;
+  /* Adjusted height */
+
+  @media screen and (max-width: 1200px) {
+    width: 500px;
+  }
+
+  /* Adjusted line-height */
+}
+
+/* Rest of your CSS remains unchanged */

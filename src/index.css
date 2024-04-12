@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Stacker';
+  src: url(/public/fonts/stacker-font/Stacker-GOzYm.otf) format('opentype'),
+  url(/public/fonts/stacker-font/Stacker-jE03l.ttf) format(('truetype'));
+}
+
+@font-face {
+  font-family: 'Neuropol';
+  src: url(/public/fonts/neuropol/neuropol.otf) format('opentype')
+}
+
+@font-face {
+  font-family: 'Meragen';
+  src: url(/public/fonts/meragen/meragen.ttf) format('truetype')
+}
+
+html, body {
+  font-family: 'Neuropol, sans-serif !important';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  z-index: 0;
+  background-color: #000004;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.animation {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
